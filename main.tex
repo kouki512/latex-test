@@ -1,14 +1,40 @@
-\documentclass{classes/resume}
+\documentclass[a4paper, 11pt, uplatex]{oecu-thesis}
 
-\title{
-	\gt{title}\\
-}
+\usepackage{subfiles}
+\usepackage{listings}
+\usepackage{plistings}
+\usepackage{color}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
+\usepackage{siunitx}
+\usepackage{enumerate}
+\usepackage{paralist}
+\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage{times}
+\usepackage[newfloat]{minted}
+\usepackage[hang,small,bf,labelsep=space]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\usepackage{framed}
+\usepackage[dvipdfmx]{pdfpages}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{references.bib}
+\captionsetup{compatibility=false}
 
-\author{
-	\gt{○○大学 ○○学科 ○○専攻 学籍番号 名前}\\
-}
+\title{XXXの開発}
+\author{電通 太郎}
+\date{{令和}\rensuji{4}年\rensuji{12}月}
+\学生番号{HT99A999}
+\指導教員{久松 潤之 准教授}
 
-\date{}
+% 特別研究の場合はコメントをはずす．卒業研究の場合はコメントアウトする．
+%\論文種別{特別研究論文}
+\年度{令和4}
+
+\所属{総合情報学部 情報学科}
+
 
 \begin{document}
 \maketitle
