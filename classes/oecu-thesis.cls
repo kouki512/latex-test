@@ -199,10 +199,10 @@
         \underline{\makebox[50mm][l]{\quad\Large\makebox[6zw][s]{\@指導教員}}}\\
 \makebox[7zw][s]{申請年月日} &
         \underline{\makebox[50mm][s]{\quad\@date}}\\
-\makebox[7zw][s]{専攻名} & 
+\makebox[7zw][s]{専攻名} &
         \underline{\makebox[50mm][l]{\quad{\Large
         \makebox[20mm][s]{\@所属}}\hfill 学専攻}}\\
-\makebox[7zw][s]{学生番号}& 
+\makebox[7zw][s]{学生番号}&
         \underline{\makebox[50mm][l]{\quad\Large\@学生番号}}\\
 \makebox[7zw][s]{氏名}&
         \underline{\makebox[50mm][l]{\quad{\Large\makebox[6zw][s]{\@author}}\hfill 印}}
@@ -229,8 +229,7 @@
         {\Large\@学生番号\quad\@author}
       \end{tabular}\par}%
       \vskip 3ex%
-    {\large 指導教員\quad\@指導教員}\hspace{10mm}\fbox{印}\\%
-	  \underline{\tiny 注意: 教員印またはサインがないものは受理しない。}\\[4ex]
+    {\large 指導教員\quad\@指導教員}\hspace{10mm}\\%
       {\normalsize\@date}\\[10ex]%
       {\large{\spaceskip=1zw 大阪電気通信大学 \@所属}\par}%
   \end{center}\par
@@ -272,7 +271,7 @@
     {\Large
      \lineskip 1.5ex%
       \begin{tabular}[t]{c}%
-        \@学生番号\ \ \@author 
+        \@学生番号\ \ \@author
       \end{tabular}\par}%
     {\large 大阪電気通信大学%
 \if修士論文
@@ -302,7 +301,7 @@
     {\Large
      \lineskip 1.5ex%
       \begin{tabular}[t]{c}%
-        \@学生番号\ \ \@author 
+        \@学生番号\ \ \@author
       \end{tabular}\par}%
     {\large 大阪電気通信大学%
 \if修士論文
@@ -340,10 +339,10 @@
 \hfill
 \begin{tabular}{rl}
   \@研究科{}研究科 & 博士前期課程\\
-\makebox[4zw][s]{専攻名} & 
+\makebox[4zw][s]{専攻名} &
         \underline{\makebox[50mm][l]{\quad{\Large
         \makebox[20mm][s]{\@所属}}\hfill 学専攻}}\\
-\makebox[4zw][s]{学生番号}& 
+\makebox[4zw][s]{学生番号}&
         \underline{\makebox[50mm][l]{\quad\Large\@学生番号}}\\
 \makebox[4zw][s]{氏名}&
         \underline{\makebox[50mm][l]{\quad{\Large\makebox[6zw][s]{\@author}}\hfill 印}}
@@ -511,7 +510,7 @@
 %
 % \@sect{NAME}{LEVEL}{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE}[TITLE]{TITLE}
 \def\@sect#1#2#3#4#5#6[#7]#8{\ifnum #2>\c@secnumdepth
-        \def\@svsec{}\else 
+        \def\@svsec{}\else
         \refstepcounter{#1}
       \addcontentsline{toc}{#1}{%
         \ifnum #2>\c@secnumdepth \else
@@ -523,7 +522,7 @@
         \edef\@svsec{\csname the#1\endcsname \csname sec@#1@postfix\endcsname
                 \hskip\@mojihaba} \let\protect\@@protect\fi     % 2.00(1)<<
         \@tempskipa #5\relax
-        \ifdim \@tempskipa<\z@ 
+        \ifdim \@tempskipa<\z@
                 \def\@svsechd{#6\hskip #3\relax%\@svsec
  #8}      % 2.00(1)
         \else
@@ -607,8 +606,8 @@
 
 \@listi
 
-\def\labelenumi{\theenumi.} 
-\def\theenumi{\arabic{enumi}} 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\arabic{enumi}}
 \def\labelenumii{\theenumii.}
 \def\theenumii{\alph{enumii}}
 \def\p@enumii{\theenumi}
@@ -619,7 +618,7 @@
 \def\theenumiv{\Alph{enumiv}}
 \def\p@enumiv{\p@enumiii\theenumiii}
 \def\enumerate{\ifnum \@enumdepth >3 \@toodeep\else
-        \advance\@enumdepth \@ne 
+        \advance\@enumdepth \@ne
         \edef\@enumctr{enum\romannumeral\the\@enumdepth}
         \list{\csname label\@enumctr\endcsname}{\usecounter
                 {\@enumctr}\def\makelabel##1{##1\hss}%
@@ -663,8 +662,8 @@
 \@namedef{description*}{\lst@strivlist \description}
 \@namedef{enddescription*}{\endlist}
 
-\def\verse{\let\\=\@centercr 
-        \list{}{\itemindent-\@mojihaba \listparindent\itemindent 
+\def\verse{\let\\=\@centercr
+        \list{}{\itemindent-\@mojihaba \listparindent\itemindent
         \rightmargin\leftmargin \advance\leftmargin\@mojihaba}\item[]}
 \let\endverse\endlist
 \def\quotation{\list{}{\listparindent\@mojihaba \itemindent\listparindent
@@ -791,7 +790,7 @@
 {\hfill
 \renewcommand{\arraystretch}{1.3}%
 \begin{tabular}{ll}
-\makebox[4zw][s]{学生番号}& 
+\makebox[4zw][s]{学生番号}&
         \underline{\makebox[50mm][l]{\quad\Large\@学生番号}}\\
 \makebox[4zw][s]{氏名}&
         \underline{\makebox[50mm][l]{\quad{\Large\makebox[6zw][s]{\@author}}\hfill 印}}
