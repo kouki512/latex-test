@@ -47,7 +47,7 @@ logFilePreferences:
   showAmalgamatedSettings: 0
   showDecorationStartCodeBlockTrace: 0
   showDecorationFinishCodeBlockTrace: 0
-  endLogFileWith: "--------------"
+  endLogFileWith: '--------------'
   showGitHubInfoFooter: 1
 
 #  verbatim environments specified
@@ -98,7 +98,7 @@ lookForPreamble:
 preambleCommandsBeforeEnvironments: 0
 
 # default value of indentation
-defaultIndent: "    "
+defaultIndent: '    '
 
 # name of code blocks that should have their body aligned at ampersand delimiters
 lookForAlignDelims:
@@ -269,11 +269,11 @@ noAdditionalIndent:
 indentRules:
   myenvironment: "\t\t"
   anotherenvironment: "\t\t\t\t"
-  chapter: " "
-  section: " "
-  item: "      "
-  myitem: "        "
-  leftRightAutoSizeBrackets: "  "
+  chapter: ' '
+  section: ' '
+  item: '      '
+  myitem: '        '
+  leftRightAutoSizeBrackets: '  '
 
 # set noAdditionalIndent globally for codeblocks
 noAdditionalIndentGlobal:
@@ -311,10 +311,10 @@ commandCodeBlocks:
   roundParenthesesAllowed: 1
   stringsAllowedBetweenArguments:
     - amalgamate: 1
-    - "node"
-    - "at"
-    - "to"
-    - "decoration"
+    - 'node'
+    - 'at'
+    - 'to'
+    - 'decoration'
     - '\+\+'
     - '\-\-'
     - '\#\#\d'
@@ -439,7 +439,7 @@ modifyLineBreaks:
     manipulateSentences: 0
     removeSentenceLineBreaks: 1
     textWrapSentences: 0
-    sentenceIndent: ""
+    sentenceIndent: ''
     sentencesFollow:
       par: 1
       blankLine: 1
@@ -461,7 +461,7 @@ modifyLineBreaks:
       other: 0
   textWrapOptions:
     columns: 0
-    separator: ""
+    separator: ''
     perCodeBlockBasis: 0
     all: 0
     alignAtAmpersandTakesPriority: 1
@@ -564,20 +564,20 @@ modifyLineBreaks:
 # replacements, only active when either -r or -rr switches are active
 replacements:
   - amalgamate: 1
-  - this: "latexindent.pl"
-    that: "pl.latexindent"
+  - this: 'latexindent.pl'
+    that: 'pl.latexindent'
     lookForThis: 1
     when: before
-  - this: "　"
-    that: " "
+  - this: '　'
+    that: ' '
     lookForThis: 1
     # Be sure to set it last
     # Combine 2 or more "half-width spaces" into 1
-  - this: "。"
-    that: "．"
+  - this: '．'
+    that: '。'
     lookForThis: 1
-  - this: "、"
-    that: "，"
+  - this: '，'
+    that: '、'
     lookForThis: 1
 
 # fineTuning allows you to tweak the internal pattern matching that
@@ -603,4 +603,4 @@ fineTuning:
   modifyLineBreaks:
     betterFullStop: '(?:\.\)(?!\h*[a-z]))|(?:(?<!(?:(?:e\.g)|(?:i\.e)|(?:etc))))\.(?!(?:[a-z]|[A-Z]|\-|~|\,|[0-9]))'
     doubleBackSlash: '\\\\(?:\h*\[\h*\d+\h*[a-zA-Z]+\h*\])?'
-    comma: ","
+    comma: ','
