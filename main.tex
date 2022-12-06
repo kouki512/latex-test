@@ -22,6 +22,12 @@
 \usepackage[backend=biber,style=ieee]{biblatex}
 \addbibresource{references.bib}
 \captionsetup{compatibility=false}
+\renewcommand{\lstlistingname}{プログラム}
+\makeatletter
+    \AtBeginDocument{
+    \renewcommand*{\thelstlisting}{\arabic{lstlisting}}
+    \@addtoreset{lstlisting}{section}}
+\makeatother
 
 \title{XXXの開発}
 \author{電通 太郎}
@@ -46,5 +52,9 @@
 \subfile{chapters/conclusion}
 \subfile{chapters/acknowledgements}
 \printbibliography[title=参考文献]
+
+% cs コースの学生は以下のコメントをはずす & chapters/programs-list.tex を修正
+% \appendix
+% \subfile{chapters/programs-list}
 
 \end{document}
