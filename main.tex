@@ -44,8 +44,19 @@
 
 \begin{document}
 \maketitle
-
+\pagenumbering{roman}
 \subfile{chapters/abstract}
+
+\tableofcontents
+% 以下の二つは、学科が配布している論文例では示されていないが、あった方がよいのでつけている。
+% ページ数としてはカウントしない。
+\listoffigures
+\listoftables
+
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
 \subfile{chapters/intro}
 \subfile{chapters/related}
 \subfile{chapters/example-figtab.tex}
